@@ -14,6 +14,7 @@ async function newView(name, filePath) {
     return view;
 }
 // displays a view of a given name
+// change hash will change the url if true
 function display(viewName, changeHash = true) {
     if (!changeHash) {
         const found = views.find(v => v.name == viewName);
